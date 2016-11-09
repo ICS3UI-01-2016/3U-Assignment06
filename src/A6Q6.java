@@ -13,6 +13,10 @@ public class A6Q6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //call method
+        lastDigit(5534);
+    }
+    public static void lastDigit(int number) {
+        
     }
 }

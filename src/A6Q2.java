@@ -34,6 +34,7 @@ public class A6Q2 {
         } else if (grade >= 80
                 && grade <= 100) {
             System.out.println("A");
+            //in case someone tries to break the system
         } else if (grade > 100) {
             System.out.println("Cheater");
         }
