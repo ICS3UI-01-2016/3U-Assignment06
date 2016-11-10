@@ -14,9 +14,17 @@ public class A6Q6 {
      */
     public static void main(String[] args) {
         //call method
-        lastDigit(5534);
+        int num = lastDigit(-5534);
+        System.out.println(num);
     }
-    public static void lastDigit(int number) {
-        
+    public static int lastDigit(int number) {
+        // Find the last digit by finding the remainder of the number divided by 10
+        number = number % 10;
+        //If the number was negative change it to a positive
+        if (number < 0) {
+            number = number * -1;
+        }
+        //return the last digit of the number given
+        return number;
     }
 }
