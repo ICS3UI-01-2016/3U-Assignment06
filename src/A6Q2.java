@@ -46,7 +46,7 @@ public class A6Q2 {
         // ask for the exam percentage
         System.out.println("What was your percentage on the exam?");
         double grade = input.nextInt();
-        // run method
+        // run the method
         examGrade(grade);
     }
 
