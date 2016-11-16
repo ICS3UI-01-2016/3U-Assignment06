@@ -14,5 +14,6 @@ public class a6q10 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //check if even or odd?
     }
 }
