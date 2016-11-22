@@ -11,9 +11,18 @@ import java.util.Scanner;
  * @author manok5757
  */
 public class A6Q6 {
-public static int lastDigit(int enteredNum){
-    int answer = enteredNum/10;
-    return answer;
+public static double lastDigit(double enteredNum){
+    // if the number entered is negative, make it a positive by multiplying it by -1
+    if(enteredNum<0){
+        enteredNum = enteredNum*-1;
+    }
+    // store the value you get by divinding the number enterd by 10 and store the answer
+    double answer = (enteredNum/10);
+    // subtract the answer previously stored by the rounded down version of the answer previously stored
+    double rightAnswer = answer- Math.floor(answer);
+    // return the rounded verion of the rightAnswer multiplied by 10 to get the last digit of the number
+    return Math.round(10*rightAnswer);
+    
 }
     /**
      * @param args the command line arguments
@@ -24,9 +33,10 @@ public static int lastDigit(int enteredNum){
         // ask the user for a number they wish to know the last digit of
         System.out.println("Please enter a number you wish to discover the last digit of:");
         // store the number
-        int numEntered = input.nextInt();
+        double numEntered = input.nextDouble();
         // run the method
-        int answer = lastDigit(numEntered);
-        System.out.println(""+answer);
+        double rightAnswer = lastDigit(numEntered);
+        // output the last digit
+        System.out.println(""+rightAnswer);
     }
 }
