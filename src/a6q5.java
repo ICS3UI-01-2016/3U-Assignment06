@@ -28,5 +28,7 @@ public class a6q5 {
         //create input for user
          Scanner input = new Scanner(System.in);
          //let user answer (let them insert "n"? and then print to screen 
+         
+         
     }
 }
