@@ -8,22 +8,23 @@
  * @author baayl3669
  */
 public class A6Q9 {
-    //
-    public static void allDigitsOdd(int number){
-        //
+    // create method
+
+    public static void allDigitsOdd(int number) {
+        // put the last digit to integer
         int last = number % 10;
-        //
-        while (last % 2 == 1){
+        // make loop to find if users number is odd
+        while (last % 2 == 1) {
             number = number / 10;
             last = number % 10;
         }
-        //
-        if (number <= 10){
+        // output if users number is true or false
+        if (number <= 10) {
             System.out.println("True");
-        }else{
+        } else {
             System.out.println("False");
         }
-                
+
     }
 
     /**
