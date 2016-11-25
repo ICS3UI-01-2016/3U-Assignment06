@@ -18,7 +18,7 @@ public class A6Q6 {
         int a = num;
         //pull apart number into its digits
         a = a % 10;
-        //if number is lower than 0 multiply and add 1
+        //shift number over
         //negative number
         if (a < 0) {
             a = a * -1;
