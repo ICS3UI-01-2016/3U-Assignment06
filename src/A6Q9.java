@@ -18,7 +18,7 @@ public class A6Q9 {
             number = number / 10;
             last = number % 10;
         }
-        // output if users number is true or false
+        // output if the users number is true or false
         if (number <= 10) {
             System.out.println("True");
         } else {
