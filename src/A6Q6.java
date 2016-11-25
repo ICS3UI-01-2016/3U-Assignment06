@@ -32,10 +32,11 @@ public class A6Q6 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        //while loop true show "a" value
+        //while loop for continuation
         while (true) {
             System.out.println("Enter number: ");
             int num = input.nextInt();
+            //show last digit
             int lastDigit = lastDigit(num);
         }
     }
