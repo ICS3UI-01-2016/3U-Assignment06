@@ -10,9 +10,10 @@
  */
 public class A6Q6 {
     // create method
-    public static void lastDigit(int num){
+
+    public static void lastDigit(int num) {
         // multiply the input by -1 if the input is a negative number
-        if(num < 0){
+        if (num < 0) {
             num = num * -1;
         }
         // percentage of input
@@ -28,7 +29,6 @@ public class A6Q6 {
      */
     public static void main(String[] args) {
         // use method
-        lastDigit(3572);    
+        lastDigit(3572);
     }
-    
 }

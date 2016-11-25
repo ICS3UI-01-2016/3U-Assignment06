@@ -33,7 +33,7 @@ public class A6Q7 {
     public static void main(String[] args) {
         // create scanner 
         Scanner in = new Scanner(System.in);
-        // ask user for number
+        // ask user for a number
         System.out.println("Enter a number");
         int number = in.nextInt();
         // run method

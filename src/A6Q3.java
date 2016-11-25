@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class A6Q3 {
 
     // make a procedure
-
     public static void factor(int number) {
         // create loop for finding the cators in the number
         for (int factor = 1; factor <= number; factor++) {

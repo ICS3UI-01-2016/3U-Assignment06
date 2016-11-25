@@ -9,7 +9,8 @@
  * @author baayl
  */
 public class A6Q8 {
-    public static void season(int month, int day){
+
+    public static void season(int month, int day) {
         // If day/month falls in 12/16 to 3/16 it is winter
         if (day >= 16 || day <= 15) {
             if (month >= 12 || month <= 3) {
@@ -35,7 +36,6 @@ public class A6Q8 {
             }
         }
     }
-        
 
     /**
      * @param args the command line arguments
@@ -43,5 +43,4 @@ public class A6Q8 {
     public static void main(String[] args) {
         season(12, 16);
     }
-    
 }
