@@ -29,7 +29,7 @@ public class A6Q5 {
                 System.out.println("***");
             }
             // if the random number is 4, then output four asteriks
-            if (randNum == 4) {
+            if (ranNum == 4) {
                 System.out.println("****");
             }
             // if the random number is 5, then output five asteriks

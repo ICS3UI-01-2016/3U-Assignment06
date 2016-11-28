@@ -2,32 +2,36 @@
 import java.util.Scanner;
 
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 /**
  *
- * @author manok5757
+ * @author DeepakManoj
  */
-public class A6Q9 {
-
-    public static boolean allDigitsOdd(double numEntered) {
+public class A6Q9h {
+public static boolean allDigitsOdd(double numEntered) {
        while(numEntered>=10){
-           if(((numEntered/10-Math.floor(numEntered/10))*10)%2>0){
-            return true;
-        }else{
+           if(((numEntered/10 - Math.floor(numEntered/10)) *10)%2==0){
                return false;
            }
-      }
-        if (numEntered < 10 && numEntered % 2 == 0) {
-            return false;
-        } else {
-            return true;
-        }
-        
+           else{
+               while(((numEntered/10 - Math.floor(numEntered/10)) *10)%2==1){
+               numEntered = ((numEntered/10 - Math.floor(numEntered/10)) *10);
+           }
+               return true;
+       }
 
     }
-
+       if(numEntered<10&&numEntered%2 == 0){
+           return false;
+       }
+       else {
+           return true;
+       }
+}
     /**
      * @param args the command line arguments
      */
@@ -43,3 +47,7 @@ public class A6Q9 {
         System.out.println(ans);
     }
 }
+
+    
+    
+
