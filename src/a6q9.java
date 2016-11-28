@@ -13,6 +13,8 @@ public class a6q9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //if any digits in the random number..
+        //even=false
+        //odd=true
     }
 }
