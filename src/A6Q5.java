@@ -13,8 +13,11 @@ import java.util.Scanner;
 public class A6Q5 {
     
     public static void chaotic (int numbers){
+        // use the for loop to find
         for (int n = 0 ; n < numbers ; n++){
+         // to return a value from 0 up to, but not including 1 use the equation below
         int randNum = (int)(Math.random()*(5 - 1 + 1)) + 1;
+        //use an if loop to find if 
         if (randNum == 5){
             System.out.println("*****");
         }
