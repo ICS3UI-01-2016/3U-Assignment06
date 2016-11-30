@@ -12,20 +12,32 @@ import java.util.Scanner;
 public class A6Q9 {
 
     public static boolean allDigitsOdd(double numEntered) {
-       while(numEntered>=10){
-           if(((numEntered/10-Math.floor(numEntered/10))*10)%2>0){
-            return true;
-        }else{
-               return false;
-           }
-      }
-        if (numEntered < 10 && numEntered % 2 == 0) {
-            return false;
-        } else {
-            return true;
-        }
-        
+        // only do this loop while the number entered is greater than or equal to ten   
+        while (numEntered >= 10) {
+            // if the number entered divided by 2 has a remainder of zero, it is a even integer 
+            if (((numEntered) % 2 == 0)) {
+                // return false meaning that the integer is even
+                return false;
+            } // if the last digit is odd
+            else {
+                // continuously chop off the last digit and keep divifding the number by ten to check if each digit is odd
+                numEntered = numEntered / 10;
+            }
 
+        }
+
+        // when the number is a single digit (less than 10)
+        // if the numbere divided by 2 has no remainder, it is an even number
+        if (numEntered < 10 && numEntered % 2 == 0) {
+            // return false meaning that the number or digit is even
+            return false;
+        } // if the number divided by 2 does not have a remainder of zero
+        else {
+            // return true, meaning that the number or digit is odd
+            return true;
+
+
+        }
     }
 
     /**
@@ -38,8 +50,9 @@ public class A6Q9 {
         System.out.println("Please enter a number you wish to find if all its digits are odd:");
         // store the number entered
         double numEntered = input.nextInt();
-        // run the method
+        // store a variable for the answer
         boolean ans = allDigitsOdd(numEntered);
+        // run the method
         System.out.println(ans);
     }
 }

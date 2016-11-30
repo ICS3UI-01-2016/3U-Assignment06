@@ -31,7 +31,7 @@ public class A6Q3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // create a scenner to collect input
+        // create a scanner to collect input
         Scanner input = new Scanner(System.in);
         // ask the user for the number they wish to find the factors of
         System.out.println("Please enter a number you wish to find the factors of");

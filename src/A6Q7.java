@@ -5,24 +5,22 @@ import java.util.Scanner;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author manok5757
  */
 public class A6Q7 {
 
-public static double firstDigit(double numEntered){
-   // start this loop if the number entered is greater than and or less than 10 
-        while(numEntered>=10){ 
+    public static double firstDigit(double numEntered) {
+        // start this loop if the number entered is greater than and or less than 10 
+        while (numEntered >= 10) {
             // keep on diving the number entered by 10 and rounding it until the number becomes one digit
-      numEntered = Math.round(numEntered/10);
-}
-    // round the final answer down to get the first digit
-   return Math.floor(numEntered);     
-}        
-        
-        
+            numEntered = Math.round(numEntered / 10);
+        }
+        // round the final answer down to get the first digit
+        return Math.floor(numEntered);
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -34,8 +32,8 @@ public static double firstDigit(double numEntered){
         // store the number
         double numEntered = input.nextDouble();
         // make 'answer' equal to the method firstDigit
-        double answer =firstDigit(numEntered);
+        double answer = firstDigit(numEntered);
         // output the answer to the user
-        System.out.println("The first digit is "+ answer);
+        System.out.println("The first digit is " + answer);
     }
 }
