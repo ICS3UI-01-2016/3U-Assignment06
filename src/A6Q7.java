@@ -13,10 +13,14 @@ import java.util.Scanner;
 public class A6Q7 {
     
      public static void firstDigit (int number){
+         // if the number is greater than 0
          if (number < 0){
+             // multiply it by -1 to make the number positive
          number = number * -1;
          }
+         // make a loop to fine if the remainder is less than 9
          while (number > 9){
+             // divide the number by 10 to find the first digit in the 
              number = number / 10;
          }
          if (number <= 9){
