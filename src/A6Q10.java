@@ -12,11 +12,24 @@ import java.util.Scanner;
 public class A6Q10 {
 
     public static boolean sameDashes(String wordOne, String wordTwo) {
+        // get length of word one
+        int length = wordOne.length();
+        // get length of word two
+        int lengthTwo = wordTwo.length();
         // find all the dashes in word one begining from the first character (0)
-        int dashes = wordOne.indexOf('-', 0);
+        int dashes = 0;
+        for(int i=0;  i<=length ;  i=i+1){
+             dashes = wordOne.indexOf('-', 0)+dashes;
+
+        }
+        int dashesTwo =0;
+        for(int r=0;  r<=length ;  r=r+1){
+             dashesTwo = wordOne.indexOf('-', 0)+dashesTwo;
+        }
         // find all the dashes in word two begining from the first character (0)
-        int dashesTwo = wordTwo.indexOf('-', 0);
+        
         // if the positions of the dashes in both words is the same
+        
         if (dashes == dashesTwo) {
             // return true
             return true;
