@@ -38,7 +38,7 @@ public class A6Q4 {
         System.out.println("Enter the number of years:");
         int years = input.nextInt();
         
-       
+       // print out the answer using the method you made above
         System.out.println(compoundInterest(rate, principal, years));
         
         
