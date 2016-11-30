@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class A6Q6 {
     
     public static void lastDigit (int number){
+        // to 
        int result = number % 10;
        if (number < 0){
            result = result * -1;
