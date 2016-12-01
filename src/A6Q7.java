@@ -18,12 +18,14 @@ public class A6Q7 {
              // multiply it by -1 to make the number positive
          number = number * -1;
          }
-         // make a loop to fine if the remainder is less than 9
+         // make a loop to find if the remainder is less than 9
          while (number > 9){
-             // divide the number by 10 to find the first digit in the 
+             // divide the number by 10 to know that is positive
              number = number / 10;
          }
+         // if the remainder is not greater than 10
          if (number <= 9){
+             // the computer will print the number
              System.out.println(number);
          }
      }
@@ -31,10 +33,12 @@ public class A6Q7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // create a input for the user
         Scanner input = new Scanner (System.in);
+        // aks the user for the number they want to enter
         System.out.println("Please enter the number:");
         int number = input.nextInt();
+        // try to apply the method using this method
         firstDigit (number);
         
         
