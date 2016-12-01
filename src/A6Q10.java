@@ -16,28 +16,38 @@ public class A6Q10 {
         int length = wordOne.length();
         // get length of word two
         int lengthTwo = wordTwo.length();
-        // find all the dashes in word one begining from the first character (0)
+        // set the variable dashes equal to 0
         int dashes = 0;
-        for(int i=0;  i<=length ;  i=i+1){
-             dashes = wordOne.indexOf('-', 0)+dashes;
+        //set the variable dashes two equal to 0
+        int dashesTwo = 0;
+        // run this loop the number of times equal to the length of the word
+        for (int i = 0; i <= length; i = i + 1) {
+            // find the position of all of the dashes starting from the first character until the length of the word is reached for word one
+            dashes = wordOne.indexOf('-', i);
+            // find the position of all of the dashes starting from the first character until the length of the word is reached for word two
+            dashesTwo = wordTwo.indexOf('-', i);
+            // if the first position of the dashes between the two words is not equal
+            if (dashes != dashesTwo) {
+                // return false
+                return false;
+            }
+
 
         }
-        int dashesTwo =0;
-        for(int r=0;  r<=length ;  r=r+1){
-             dashesTwo = wordOne.indexOf('-', 0)+dashesTwo;
-        }
-        // find all the dashes in word two begining from the first character (0)
-        
-        // if the positions of the dashes in both words is the same
-        
+        // if all the positions of the dashes are equal between both words
         if (dashes == dashesTwo) {
             // return true
             return true;
-        }// if they are not in the same position in both words
-        else {
+        }
+        // if the both words do not contain dashes
+        if (wordOne.indexOf('-') == -1 && wordTwo.indexOf('-') == -1) {
+            // return true
+            return true;
+        } else {
             // return false
             return false;
         }
+
 
 
     }
