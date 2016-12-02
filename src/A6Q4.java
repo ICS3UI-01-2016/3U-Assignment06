@@ -14,6 +14,7 @@ public class A6Q4 {
     
     public static double compoundInterest (double rate , double principal, int years){
       // the  formula to find the the total compound interest
+        // using the Math.pow to find toe the power of n^
      double amount = principal * Math.pow(1.0 + rate,years);
      return amount;
      }
