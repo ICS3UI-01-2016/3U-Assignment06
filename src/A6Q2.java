@@ -54,7 +54,8 @@ public class A6Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-                
+       
+        // try to find if the method above is working
         examGrade (70);
       
     }
