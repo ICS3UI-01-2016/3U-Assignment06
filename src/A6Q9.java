@@ -13,13 +13,17 @@ import java.util.Scanner;
 public class A6Q9 {
      
     public static boolean allDigitsOdd (int number){
-        
+        // if the number is less than 0
         while (number > 0){
+            // divide the number by 10 to find the remainder
             number = number % 10;
         }
+        // if the number is even number
         if (number %2 ==0){
+            // if it is not an add number return false
             return false;     
         } 
+        // if the number is an odd number
         return true;
     }
 
@@ -32,10 +36,14 @@ public class A6Q9 {
      */
     public static void main(String[] args) {
         
+        // create an input for the user
         Scanner input = new Scanner (System.in);
+        
+        // ask the user ti enter the number they want
         System.out.println("Please enter your number:");
         int number = input.nextInt();
         boolean allDigitsOdd = allDigitsOdd(number);
+        // try to cehck the method above is working using boolean allDigitsOdd
         System.out.println(allDigitsOdd);
         
         
