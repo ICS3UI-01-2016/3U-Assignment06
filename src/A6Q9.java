@@ -20,7 +20,7 @@ public class A6Q9 {
         }
         // if the number is even number
         if (number %2 ==0){
-            // if it is not an add number return false
+            // if it is not an odd number return false
             return false;     
         } 
         // if the number is an odd number
