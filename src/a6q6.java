@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -12,13 +15,33 @@ public class a6q6 {
     /**
      * @param args the command line arguments
      */
+    public static int lastDigit(int num){
+        //create variable for last digit
+        int ld = num%10;
+        //if input # is negative
+        if(num<0){
+            ld= (num%10)*-1;
+        }
+        //return the last digit
+        return ld;
+    }
+    
+    
+    
+    
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        //has to work for negatives too
-        //divide input number by 10
-        //9%3=0.... 5%2=1
-        //explore string options to get last digit
+        //test code
+        //create input for the user
+        Scanner input= new Scanner(System.in);
+        //let user type in #
+        int num1 = input.nextInt();
+        //call method
+        lastDigit(num1);
+        //variable for last digit
+        //int lastd= lastDigit();
+        //print 
+        System.out.println(num1%10);
+        //not finished find way to test code under main class^^
         
     }
 }
