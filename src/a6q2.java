@@ -37,7 +37,6 @@ public class a6q2 {
    	
 	
 	public static void main(String[] args) {
-    	// TODO code application logic here
     	//create input for the user
     	Scanner input= new Scanner(System.in);
     	System.out.println("Please type in exam grade in %");

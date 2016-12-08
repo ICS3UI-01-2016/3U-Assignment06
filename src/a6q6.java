@@ -35,13 +35,11 @@ public class a6q6 {
         Scanner input= new Scanner(System.in);
         //let user type in #
         int num1 = input.nextInt();
-        //call method
-        lastDigit(num1);
-        //variable for last digit
-        //int lastd= lastDigit();
+        //call method & create variable for last digit
+        int lastd =lastDigit(num1);
         //print 
-        System.out.println(num1%10);
-        //not finished find way to test code under main class^^
+        System.out.println(lastd);
+        
         
     }
 }
