@@ -53,13 +53,13 @@ public class a6q8test {
         //
         doy= md+d;
         //based on doy determine season
-        if(doy>75 && doy<=165)
+        if(doy>=75 && doy<=165)
             season= "Spring";//date falls between 3/16(75) and 6/15(165)
-        if(doy>166 && doy<=257)
+        if(doy>=166 && doy<=257)
             season= "Summer";//date falls between  6/16(166)  and 9/15(257)
-        if(doy>258 && doy<=349)
+        if(doy>=258 && doy<=349)
             season= "Fall";//date falls between 9/16(258) and 12/15
-        if(doy>350 && doy<=74)
+        if(doy>=350 && doy<=74)
             season= "Winter";//date falls between 12/16(350) and 3/15(74)
 
 
@@ -72,14 +72,19 @@ public class a6q8test {
     public static void main(String[] args) {
         //create input for the user
         Scanner input= new Scanner(System.in);
-        //variables for month and day
-        
+        //ask user for month
+        System.out.println("Please type in # month");
+        //let user answer
         int month = input.nextInt();
+        //ask user for day
+        System.out.println("Please type in # day");
+        //let user answer
         int day = input.nextInt();
         //call method
-        //String s = season(int m, int d);
-        //System.out.println(season);
-        //fix code
+        String s = season(month,day);
+        //print season
+        System.out.println(s);
+        //fix determination of season 3/15 shows empty
 
     }
 }
