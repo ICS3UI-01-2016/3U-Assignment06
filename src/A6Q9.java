@@ -36,7 +36,6 @@ public class A6Q9 {
             // return true, meaning that the number or digit is odd
             return true;
 
-
         }
     }
 
