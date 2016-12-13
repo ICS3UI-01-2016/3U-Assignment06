@@ -17,24 +17,36 @@ public class A6Q10 {
         int count = 0;
         char ch;
         for (int i = 0; i < lengthone; i++) {
-            if (firsterm.indexOf("-", 1) != secondterm.indexOf("-", 1)) {
-                return false;
-            }
+            if (firsterm.charAt(i) == '-') {
+                if (secondterm.charAt(i) == '-') {
+                    return true;
+                } else {
+                   return false;
+                }
         }
-        return true;
-
-
+        }
     }
+//           
+            
 
-    /**
-     * @param args the command line arguments
-     */
+            /**
+             * @param args the command line arguments
+             */
+    
+
     public static void main(String[] args) {
+        //create an input for the user
         Scanner input = new Scanner(System.in);
+        
+        // ask the user to the enter the first term 
         System.out.println("Enter the first term:");
         String firsterm = input.nextLine();
+        
+        // ask the user to enter the secondterm they want to have
         System.out.println("Enter the second term:");
         String secondterm = input.nextLine();
+        
+        // the computer will print our the answer usign the methiod 
         System.out.println(sameDashes(firsterm, secondterm));
 
 
