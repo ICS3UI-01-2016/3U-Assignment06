@@ -43,7 +43,8 @@ public class A6Q9 {
         System.out.println("Please enter your number:");
         int number = input.nextInt();
         boolean allDigitsOdd = allDigitsOdd(number);
-        // try to cehck the method above is working using boolean allDigitsOdd
+        
+        // try to check the method above is working using boolean allDigitsOdd
         System.out.println(allDigitsOdd);
         
         
