@@ -1,3 +1,7 @@
+
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -13,20 +17,32 @@ public class a6q7 {
      * @param args the command line arguments
      */
     
-    public static double firstDigit(int num){
-        int ld = num%10;
-        return ld;
+    public static int firstDigit(int num){
+        
+        //make num (first digit of #) always come back positive
+        num = Math.abs(num);
+        //loop while the input number is greater than 9 then divide by 10.
+        while(num>9){
+            num=num/10;
+        }
+        
+        
+        
+        
+        return num;
     }
     
     
     
     public static void main(String[] args) {
-       
-        //use similar method, but do opposite of a6q6 
-        //find first digit
-        //print first digit
-        //should work for negatives as well
-        
-        //try /10 by the amount of characters
+//test code
+        //create input for the user
+        Scanner input= new Scanner(System.in);
+        //let user type in #
+        int num1 = input.nextInt();
+        //call method & create variable for last digit
+        int firstd =firstDigit(num1);
+        //print 
+        System.out.println(firstd);
     }
 }
