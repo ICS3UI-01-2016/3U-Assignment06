@@ -17,17 +17,38 @@ public class a6q5 {
      */
     
     public static void chaotic(int numLines){
-        //create a pattern that prints 1><5 stars on each line
-        // formula for 0 upto but not including 1: int randNum = (int)(Math.random()*(n - a + 1))+ a
-        //print to screen?
-        //cannot be zero
+        //initialize variable for stars
+        String stars ="";
+        int a = 1;//lower limit
+        int n= 5;//upper limit
+        //create a for loop that prints lines of stars
+        for(int i=1; i<=numLines; i++){
+            //clean out string of stars
+            stars="";
+            //get random number between 1 and 5 with formula
+            int randNum = (int)(Math.random()*(n - a + 1))+ a;
+            //loop amount of stars on each line
+            for(int j=1; j<=randNum; j++){
+                stars = stars+"*";
+            }
+            //print lines of stars to screen
+            System.out.println(stars);
+        }
+        
+        
+        
     }
     
     
     public static void main(String[] args) {
         //create input for user
          Scanner input = new Scanner(System.in);
-         //let user answer (let them insert "n"? and then print to screen 
+         //let user input number of lines to print
+         int numLines = input.nextInt();
+         //call method
+         chaotic(numLines);
+         
+         
          
          
     }
