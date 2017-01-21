@@ -53,14 +53,14 @@ public class a6q8test {
         //
         doy= md+d;
         //based on doy determine season
-        if(doy>=75 && doy<=165)
-            season= "Spring";//date falls between 3/16(75) and 6/15(165)
-        if(doy>=166 && doy<=257)
-            season= "Summer";//date falls between  6/16(166)  and 9/15(257)
+        if(doy>=75 && doy<=166)
+            season= "Spring";//date falls between 3/16 and 6/15
+        if(doy>=167 && doy<=257)
+            season= "Summer";//date falls between  6/16  and 9/15
         if(doy>=258 && doy<=349)
-            season= "Fall";//date falls between 9/16(258) and 12/15
-        if(doy>=350 && doy<=74)
-            season= "Winter";//date falls between 12/16(350) and 3/15(74)
+            season= "Fall";//date falls between 9/16 and 12/15
+        if(doy>=350 || doy<=74)
+            season= "Winter";//date falls between 12/16 and 3/15
 
 
         return season;
