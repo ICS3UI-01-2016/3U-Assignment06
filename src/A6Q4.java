@@ -11,16 +11,14 @@ import java.util.Scanner;
  * @author khant5061
  */
 public class A6Q4 {
-    public static void compoundInterest(int years, double R, int p){
-        //brackets
-        double a = (R+1);
-        //exponents
+    public static void compoundInterest(int years, double I, int p){
+        //BEDMAS
+        double a = (I+1);
         double c = Math.pow(a,years);
-        //multiplication
         double interest = a * c;
         //total balance
         double balance = interest + p;
-        //tell the user their total balance
+        //print total balance
         System.out.println("Your total balance is $" + balance);
         
        
@@ -32,13 +30,13 @@ public class A6Q4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //create input for user
+        //create input
         Scanner input = new Scanner(System.in);
-        //ask user for initial balance
-        System.out.println("Balance prior to interest:");
+        //ask for initial balance
+        System.out.println("Balance before interest:");
         int p = input.nextInt();
         
-        //ask user for interest rate
+        //ask for interest rate
         System.out.println("Interest rate: ");
         double rate = input.nextDouble();
         
@@ -48,6 +46,7 @@ public class A6Q4 {
         
         //final balance
         compoundInterest(years,rate,p);
+        
         
         
     }

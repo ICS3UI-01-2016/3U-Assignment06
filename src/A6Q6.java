@@ -11,9 +11,9 @@ import java.util.Scanner;
  * @author khant5061
  */
 public class A6Q6 {
-    public static void lastDigit (int num){
-        int lastDigit = num % 10;
-        System.out.println("" + lastDigit);
+    public static void finalDigit (int num){
+        int finalDigit = num % 10;
+        System.out.println("" + finalDigit);
     }
 
     /**
@@ -21,12 +21,13 @@ public class A6Q6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //create scanner for user
+        //create scanner
         Scanner input = new Scanner (System.in);
-        //ask user for number
-        System.out.println("Enter number for last digit: ");
-        //store number
+        //ask for number
+        System.out.println("Enter number for final digit: ");
+        //store the number
         int num = input.nextInt();
-        lastDigit(num);
+        finalDigit(num);
+        
     }
 }

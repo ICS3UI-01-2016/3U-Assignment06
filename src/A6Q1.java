@@ -12,9 +12,10 @@ import java.util.Scanner;
  */
 public class A6Q1 {
     //method for radius of circle 
-    public static double calcCircleArea(double radius, double pi){
+    public static double CircleArea(double radius, double pi){
     double area = radius * radius * pi;
     return area;
+    
     
 }
 
@@ -27,12 +28,15 @@ public class A6Q1 {
         Scanner input = new Scanner(System.in);
         //pi
         double pi = 3.14;
-        //ask user to input radius
-        System.out.println("Enter radius of circle: ");
+        //ask for radius
+        System.out.println("Enter radius of circle ");
         Double radius = input.nextDouble();
         //calculate area
-        double area = calcCircleArea(radius,pi);
+        double area = CircleArea(radius,pi);
         System.out.println("The area of the circle is " + area);
         
+        
     }
+   
+    
 }

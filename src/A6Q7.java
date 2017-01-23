@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author khant5061
  */
 public class A6Q7 {
-    public static void firstDigit (int num){
+    public static void finalDigit (int num){
         while (num > 10){
             num = num/10;
             System.out.println("" + num);
@@ -22,6 +22,7 @@ public class A6Q7 {
             System.out.println("" + num);
         }
     
+        
     }
 
     /**
@@ -29,14 +30,15 @@ public class A6Q7 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //create input for user
+        //create input
         Scanner input = new Scanner(System.in);
-        //ask user for number to find first digit
+        //ask for number to find final digit
         System.out.println("Enter number: ");
         //store number
         int num = input.nextInt();
         //apply method
-        firstDigit(num);
+        finalDigit(num);
+        
         
         
         

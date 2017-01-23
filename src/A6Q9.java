@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author khant5061
  */
 public class A6Q9 {
-    public static void allDigitsOdd(int num){
+    public static void allOdd(int num){
         num = num / 10;
         num = num % 2;
         if(num == 0){
@@ -33,12 +33,12 @@ public class A6Q9 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //create input for user
+        //create input
         Scanner input = new Scanner(System.in);
-        //ask user for series of numbers on the same line
-        System.out.println("Enter number: ");
+        //ask numbers on the same line
+        System.out.println("Enter number:  ");
         int num = input.nextInt();
         //apply method
-        allDigitsOdd(num);
+        allOdd(num);
     }
 }

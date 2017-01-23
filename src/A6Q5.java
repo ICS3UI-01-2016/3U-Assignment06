@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class A6Q5 {
 
-    public static void chaotic(int lines) {
+    public static void chaos(int lines) {
         while (1 == 1){
         int randNum = (int) (Math.random() * (5 - 1 + 1)) + 1;
         if (randNum == 1) {
@@ -32,6 +32,7 @@ public class A6Q5 {
             
         }
         
+        
     }
     }
     /**
@@ -41,10 +42,10 @@ public class A6Q5 {
         // TODO code application logic here
         //create scanner for input
         Scanner input = new Scanner(System.in);
-        //ask user for how many lines they want
+        //ask how many lines
         System.out.println("How many lines?");
         int lines =input.nextInt();
-        chaotic(lines);
+        chaos(lines);
         
         
         

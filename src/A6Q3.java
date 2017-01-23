@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author khant5061
  */
 public class A6Q3 {
-    public static int factors (int num){
+    public static int factor (int num){
         num = num%2;
         return num;
       
@@ -25,7 +25,9 @@ public class A6Q3 {
         // TODO code application logic here
         Scanner input = new Scanner (System.in);
         int num =input.nextInt();
-        factors(num);
+        factor(num);
         System.out.println("" + num);
+        
+        
     }
 }
