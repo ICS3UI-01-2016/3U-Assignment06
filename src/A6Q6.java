@@ -10,19 +10,20 @@ import java.util.Scanner;
  * @author ayyaf3300
  */
 public class A6Q6 {
-    // make a variable for the user to 
+    // create a variable that will be used for the method
 
     public static int lastDigit(int num1) {
-        // tell the user to enter the number
         
         
+        // create an if statement that will get negative numbers and turn them into positive ones
         if (num1 < 0) {
             num1 = num1 * -1;
         }
-        // get the number and use the 
+        // divide the number
         int answer = num1 % 10;
         // give the user the final answer
         System.out.println("The last digit of the number is " + answer);
+        // return tha answer to the user
         return answer;
     }
 
@@ -33,6 +34,6 @@ public class A6Q6 {
         // create a scanner
         Scanner input = new Scanner(System.in);
         // tell the user to input the number they wish to use in the program in the brackets below
-        lastDigit(352);
+        lastDigit(-352);
     }
 }

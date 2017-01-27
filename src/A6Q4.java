@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author ayyaf3300
  */
 public class A6Q4 {
-
+// create a method that will help calculate intrest
     public static double compoundIntrest(double principal, double rate, double years) {
         // create the equation so that the program can calculate the new balance
         double balance = (principal * (Math.pow((1 + rate), years)));
@@ -27,15 +27,15 @@ public class A6Q4 {
         Scanner input = new Scanner(System.in);
         // tell the user to input the variables to calculate the new balance
         System.out.println("Please enter the intrest ");
-        // input the principal
+        // create variable principal to store the number the user inputed
         double principal = input.nextDouble();
-        // input the rate
+        // create variable rate to store the number the user inputed
         double rate = input.nextDouble();
-        // input the years
+        // create variable years to store the number the user inputed
         double years = input.nextDouble();
-        // get the user to input the number they want to calculate in the brackets below
+        // get the user to input the number they want to calculate in the brackets below to get the new balance
         double balance = compoundIntrest(990, 0.35, 5.0);
-        // tel the user the new balance
+        // tell the user the new balance 
         System.out.println("The new balance is " + balance);
     }
 }

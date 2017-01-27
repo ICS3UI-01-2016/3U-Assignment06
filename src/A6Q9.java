@@ -14,20 +14,22 @@ public class A6Q9 {
      
     public static int allDigitsodd(int num1) {
 
-        // create an if statment for the negative numbers so that the odd digits will come out as a positive
-       int answer = 0;
-        if (num1 < 0) {
-            num1 = num1 * -1;
-        }
-        
-        int []i 1 == [0];
-                if(num1[i]%2 == 0){
-           
-        }
-        // give the user the final answer
-        System.out.println("The odd digit of the number is " + answer);
-        return answer;
-    }
+              // put the last digit to integer
+         int last = num1 % 10;
+         // make loop to find if users number is odd
+         while (last % 2 == 1) {
+             num1 = num1 / 10;
+             last = num1 % 10;
+         }
+         // output if the users number is true or false
+         if (num1 <= 10) {
+             System.out.println("True");
+         } else {
+             System.out.println("False");
+         }
+ return last;
+     }
+    
 
     /**
      */
@@ -36,6 +38,6 @@ public class A6Q9 {
         // create a scanner
         Scanner input = new Scanner(System.in);
         // tell the user to input the number they wish to use in the program in the brackets below
-        allDigitsodd(352);int answer;
+        allDigitsodd(5791);
     }
 }
